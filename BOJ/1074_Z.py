@@ -1,17 +1,8 @@
 def dfs(i, j, topleft, l):
     global r,c
-    if l == 2:
-        r = r%2
-        c = c%2
-        if r == 0 and c == 0:
-            print(topleft)
-        if r == 0 and c == 1:
-            print(topleft+1)
-        if r == 1 and c == 0:
-            print(topleft+2)
-        if r == 1 and c == 1:
-            print(topleft+3)
-        return        
+    if l == 1:
+        print(topleft)
+        return
     else:
         l = l//2
         if r < i+l and c < j+l:
