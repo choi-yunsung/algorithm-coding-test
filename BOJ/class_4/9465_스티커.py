@@ -9,7 +9,7 @@ for _ in range(t):
     dp = [[0 for _ in range(n)] for _ in range(2)]
     
     if n == 1:
-        print(max(arr[0][0], arr[0][1]))
+        print(max(arr[0][0], arr[1][0]))
     else:
         dp[0][0] = arr[0][0]
         dp[1][0] = arr[1][0]
